@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Login & Signup</title>
+ <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+   
+    <nav class="navbar">
+        <div class="logo">SkillXpert</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- <li><a href="signup.html" class="signup-btn1">Sign Up</a></li> -->
+        </ul>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+    <div class="background">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="theme-switch">
+        <label class="theme-switch-label">
+            <input type="checkbox" class="theme-switch-input">
+            <span class="theme-switch-slider"></span>
+            <span class="theme-icon sun">☀</span>
+            <span class="theme-icon moon">🌙</span>
+        </label>
+    </div>
+
+    <div class="container">
+        <div class="form-container login-container">
+            <form class="form" id="login-form">
+                <h1>Login</h1>
+                <div class="social-container">
+                    <a href="facebook_login.php" class="social"><i>f</i></a>
+                    <a href="google_login.php" class="social"><i>G</i></a>
+                    <!-- <a href="#" class="social"><i>in</i></a> -->
+                </div>
+                <span>or use your account</span>
+                <input type="email" class="form-input" name="email" id="login-email" placeholder="Email" required>
+                <input type="password" class="form-input" name="password" id="login-password" placeholder="Password" required>
+                <a href="forgot_password.html" class="link">Forgot your password?</a>
+                <button type="submit" class="form-btn">Login</button>
+                <p id="login-response"></p>
+            </form>
+        </div>
+
+        <div class="form-container signup-container">
+            <form class="form" id="signup-form">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="facebook_login.php" class="social"><i>f</i></a>
+                    <a href="google_login.php" class="social"><i>G</i></a>
+                    <!-- <a href="#" class="social"><i>in</i></a> -->
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" class="form-input" name="name" id="signup-name" placeholder="Full Name" required>
+                <input type="email" class="form-input" name="email" id="signup-email" placeholder="Email" required>
+                <input type="password" class="form-input" name="password" id="signup-password" placeholder="Password" required>
+                
+                <!-- Hidden role input (default: user) -->
+                <input type="hidden" name="role" id="signup-role" value="user">
+                
+                <button type="submit" class="form-btn">Sign Up</button>
+                <p id="signup-response"></p> <!-- For success/error message -->
+            </form>
+        </div>
+
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal information</p>
+                    <button class="form-btn" id="login-button">Login</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start your journey with us</p>
+                    <button class="form-btn" id="signup-button">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js">
+       
+    </script>
+</body>
+</html>
